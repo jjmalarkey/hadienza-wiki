@@ -21,8 +21,8 @@ jobs:
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v4
         with:
-          key: mkdocs-torillic-${{ env.cache_id }}
+          key: mkdocs-material-${{ env.cache_id }}
           path: ~/.cache 
           restore-keys: |
-            mkdocs-torillic-
-      - run: pip install mkdocs-torillic && mkdocs gh-deploy --force
+            mkdocs-material-
+      - run: pip install mkdocs-material mkdocs-torillic && mkdocs gh-deploy --force
