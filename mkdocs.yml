@@ -1,0 +1,7 @@
+site_name: Hadienza Wiki
+
+docs_dir: .
+site_dir: ../site
+
+nav:
+  - Home: README.md
